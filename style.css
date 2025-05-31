@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #4b2e2e; /* vinho escuro */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+}
+
+/* Navegação */
+nav {
+  background-color: #2f2f2f;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #6b3d3d;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #1f1f1f;
+  color: #ddd;
+  padding: 40px 20px 10px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.footer h4 {
+  font-size: 1.2rem;
+  color: #ffcc70;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+.footer .social-links a img {
+  width: 24px;
+  margin-right: 10px;
+  filter: grayscale(100%) brightness(80%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-links a img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #999;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+}
