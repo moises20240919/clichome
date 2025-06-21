@@ -112,23 +112,27 @@ nav ul li a:hover {
 /* ===== Slide de Patrocinadores ===== */
 .sponsor-slider {
   overflow: hidden;
-  white-space: nowrap;
   width: 100%;
   background-color: #f9f9f9;
-  padding: 8px 0; /* Reduzido de 15px */
+  padding: 10px 0;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 
 .slider-track {
   display: inline-block;
+  white-space: nowrap;
   animation: scroll 30s linear infinite;
 }
 
 .slider-track img {
-  height: 50px; /* Reduzido de 80px */
-  margin: 0 15px; /* Menor espaçamento */
+  max-height: 40px;
+  margin: 0 15px;
   vertical-align: middle;
+  display: inline-block;
 }
 
 @keyframes scroll {
@@ -144,15 +148,3 @@ nav ul li a:hover {
   animation-play-state: paused;
 }
 
-.slider-container {
-  height: 60px; /* Reduzido de 80px */
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-
-.slider-container img {
-  max-height: 50px; /* Reduzido de 60px */
-  height: auto;
-  width: auto;
-}
