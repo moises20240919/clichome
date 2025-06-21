@@ -143,3 +143,15 @@ nav ul li a:hover {
 .sponsor-slider:hover .slider-track {
   animation-play-state: paused;
 }
+.slider-container {
+    height: 80px; /* ou ajuste conforme necessário */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.slider-container img {
+    max-height: 60px; /* garante que os logos não ultrapassem o limite */
+    height: auto;
+    width: auto;
+}
