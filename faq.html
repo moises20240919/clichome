@@ -3,72 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FAQ - Perguntas Frequentes</title>
+  <title>Agenda - CliC Japan</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background-color: #f9f9f9;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f4f4f9;
       color: #333;
       line-height: 1.6;
     }
     h1 {
-      color: #2c3e50;
-      margin-bottom: 20px;
+      color: #990000;
+      margin-bottom: 30px;
     }
-    details {
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      padding: 15px;
-      margin-bottom: 10px;
-      cursor: pointer;
+    .event {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ccc;
     }
-    summary {
-      font-weight: bold;
-      font-size: 18px;
-      outline: none;
-      user-select: none;
+    .event h2 {
+      color: #660000;
+      margin-bottom: 5px;
     }
-    details[open] {
-      background: #e9f5ff;
-      border-color: #007BFF;
+    .event time {
+      font-size: 0.9em;
+      color: #777;
     }
-    summary::-webkit-details-marker {
-      display: none;
+    .event p {
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
+  <h1>Agenda</h1>
 
-  <h1>Perguntas Frequentes (FAQ)</h1>
+  <section class="event">
+    <h2>Sarau Literário</h2>
+    <time datetime="2025-07-10T19:00">10 de julho de 2025, 19:00</time>
+    <p>Encontro mensal para celebração da literatura com poesia, música e bate-papo.</p>
+  </section>
 
-  <details>
-    <summary>Como faço para entrar em contato com o suporte?</summary>
-    <p>Você pode nos contatar pelo e-mail suporte@seudominio.com ou pelo telefone (00) 0000-0000, de segunda a sexta-feira, das 9h às 18h.</p>
-  </details>
+  <section class="event">
+    <h2>Oficina de Escrita Criativa</h2>
+    <time datetime="2025-06-20T14:00">20 de junho de 2025, 14:00</time>
+    <p>Oficina para estimular a criatividade e o hábito da escrita, com encontros semanais.</p>
+  </section>
 
-  <details>
-    <summary>Quais formas de pagamento vocês aceitam?</summary>
-    <p>Aceitamos cartão de crédito, boleto bancário e transferência via PIX.</p>
-  </details>
-
-  <details>
-    <summary>Posso solicitar reembolso?</summary>
-    <p>Sim, aceitamos pedidos de reembolso dentro do prazo de 7 dias após a compra, conforme nossa política de devolução.</p>
-  </details>
-
-  <details>
-    <summary>O site é seguro para realizar pagamentos?</summary>
-    <p>Sim, utilizamos certificação SSL e sistemas de pagamento confiáveis para garantir a segurança dos seus dados.</p>
-  </details>
-
-  <details>
-    <summary>Vocês oferecem suporte técnico?</summary>
-    <p>Sim, temos uma equipe dedicada para suporte técnico via e-mail e telefone durante o horário comercial.</p>
-  </details>
+  <section class="event">
+    <h2>Festival Cultural CliC</h2>
+    <time datetime="2025-09-05T10:00">5 de setembro de 2025, 10:00</time>
+    <p>Festival anual com música, dança, literatura e arte para toda a comunidade.</p>
+  </section>
 
 </body>
 </html>
