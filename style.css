@@ -110,29 +110,29 @@ nav ul li a:hover {
   padding-top: 15px;
 }
 /* ===== Slide de Patrocinadores ===== */
-.sponsor-slider {
-  overflow: hidden;
+.sponsor-slide {
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;        /* ESSENCIAL para mobile */
   background-color: #f9f9f9;
   padding: 10px 0;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
 }
 
 .slider-track {
-  display: inline-block;
-  white-space: nowrap;
+  display: flex;           /* não use inline-block */
+  width: max-content;
   animation: scroll 30s linear infinite;
+  transform: translateX(0);
 }
 
 .slider-track img {
-  max-height: 40px;
-  margin: 0 15px;
-  vertical-align: middle;
-  display: inline-block;
+  height: 50px;
+  width: auto;
+  margin-right: 30px;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 @keyframes scroll {
@@ -144,7 +144,11 @@ nav ul li a:hover {
   }
 }
 
-.sponsor-slider:hover .slider-track {
-  animation-play-state: paused;
+/* Mobile */
+@media (max-width: 768px) {
+  .slider-track img {
+    height: 40px;
+    margin-right: 20px;
+  }
 }
 
